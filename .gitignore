@@ -1,0 +1,39 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Secrets / local config
+.env
+
+# Data (large or private) - keep folder structure only
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Generated artifacts
+models/saved/
+*.joblib
+*.pkl
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+
+
+# .venv/ — don't upload your Python virtual environment.
+# .env — don't upload environment variables or secrets.
+# data/raw/* — don't upload the raw dataset files.
+# models/saved/ — don't upload saved model files.
+# *.pkl and *.joblib — ignore files with these extensions.
